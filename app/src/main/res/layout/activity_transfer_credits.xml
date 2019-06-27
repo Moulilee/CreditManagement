@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/transfer_credits_parent_activity"
+        android:layout_width="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content"
+        tools:context=".TransferCreditsActivity">
+
+        <TextView
+            android:id="@+id/label_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_margin"
+            android:fontFamily="@font/krub_regular"
+            android:text="@string/from_text_view_text"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <TextView
+            android:id="@+id/label_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_margin"
+            android:fontFamily="@font/krub_regular"
+            android:text="@string/username_text_view_text"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/label_from" />
+
+        <TextView
+            android:id="@+id/label_users_credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_margin"
+            android:fontFamily="@font/krub_regular"
+            android:text="@string/credits_text_view_text"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/label_user_name" />
+
+        <TextView
+            android:id="@+id/transfer_user_name_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_view_margin"
+            android:layout_marginLeft="@dimen/text_view_margin"
+            android:layout_marginEnd="@dimen/text_view_margin"
+            android:layout_marginRight="@dimen/text_view_margin"
+            android:fontFamily="@font/krub_regular"
+            android:textAppearance="?android:textAppearanceSmall"
+            app:layout_constraintBaseline_toBaselineOf="@+id/label_user_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/label_user_name" />
+
+        <TextView
+            android:id="@+id/transfer_user_credits_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_view_margin"
+            android:layout_marginLeft="@dimen/text_view_margin"
+            android:layout_marginEnd="@dimen/text_view_margin"
+            android:layout_marginRight="@dimen/text_view_margin"
+            android:fontFamily="@font/krub_regular"
+            android:textAppearance="?android:textAppearanceSmall"
+            app:layout_constraintBaseline_toBaselineOf="@+id/label_users_credits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/label_users_credits" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/krub_regular"
+            android:text="To"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/label_users_credits"
+            tools:text="To" />
+
+        <Spinner
+            android:id="@+id/spinner_user_names"
+            android:layout_width="252dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/receive_user_credit_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.803"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/receive_user_credits_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_margin"
+            android:fontFamily="@font/krub_regular"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_user_names" />
+
+        <EditText
+            android:id="@+id/receive_user_credit_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:focusedByDefault="false"
+            android:hint="@string/edit_text_hint"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/transfer_credits_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/user_button_margin"
+            android:layout_marginLeft="@dimen/user_button_margin"
+            android:layout_marginTop="@dimen/user_button_margin"
+            android:layout_marginEnd="@dimen/user_button_margin"
+            android:layout_marginRight="@dimen/user_button_margin"
+            android:layout_marginBottom="@dimen/user_button_margin"
+            android:background="@color/buttonColor"
+            android:text="@string/transfer_button_text"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receive_user_credit_edit_text" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

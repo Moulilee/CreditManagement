@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/user_pic_image_view"
+        android:layout_width="@dimen/user_profile_image_view_width_and_height"
+        android:layout_height="@dimen/user_profile_image_view_width_and_height"
+        android:layout_marginStart="@dimen/profile_image_view_margin"
+        android:layout_marginLeft="@dimen/profile_image_view_margin"
+        android:layout_marginTop="@dimen/profile_image_view_margin"
+        android:layout_marginBottom="@dimen/profile_image_view_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_man" />
+
+    <TextView
+        android:id="@+id/user_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_view_margin"
+        android:layout_marginLeft="@dimen/text_view_margin"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/krub_regular"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/credits_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/transfer_button"
+        app:layout_constraintStart_toEndOf="@+id/user_pic_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/credits_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_view_margin"
+        android:layout_marginLeft="@dimen/text_view_margin"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/krub_regular"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/transfer_button"
+        app:layout_constraintStart_toEndOf="@+id/user_pic_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_text_view" />
+
+    <Button
+        android:id="@+id/transfer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/user_button_margin"
+        android:padding="@dimen/transfer_credits_padding"
+        android:layout_marginEnd="@dimen/user_button_margin"
+        android:layout_marginRight="@dimen/user_button_margin"
+        android:layout_marginBottom="@dimen/user_button_margin"
+        android:background="@color/buttonColor"
+        android:fontFamily="@font/krub_regular"
+        android:text="@string/transfer_credit_button_text"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

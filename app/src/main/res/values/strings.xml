@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">CreditManagementApp</string>
+
+    <!--Transfer Credit Button text -->
+    <string name="transfer_credit_button_text">Transfer</string>
+
+    <!--User's data Button text -->
+    <string name="user_button_text">Users</string>
+
+    <!--Spark's foundation logo text -->
+    <string name="main_logo_text">Credit Management</string>
+
+    <!--From TextView's text -->
+    <string name="from_text_view_text">From:</string>
+
+    <!--UserName TextView's text -->
+    <string name="username_text_view_text">Name:</string>
+
+    <!--Credits's TextView's text -->
+    <string name="credits_text_view_text">Credits:</string>
+
+    <!--Credits's EDitText's hint -->
+    <string name="edit_text_hint">Enter Credits</string>
+
+    <!--Transfer's Button's text -->
+    <string name="transfer_button_text">Transfer</string>
+
+    <!--Error Message on failed query to the database -->
+    <string name="error_query_database">Cannot query unknown URI</string>
+
+    <!--Error Message on failed insertion to the database -->
+    <string name="error_insertion_failed">Insertion is not supported for</string>
+
+    <!--Error Message on failed update to the database -->
+    <string name="error_update_failed">update is not supported for</string>
+
+    <!--AlertDialog message for confirmation -->
+    <string name="confirm_positive_dialog">Are you sure to transfer credits</string>
+
+    <!--AlertDialog positive button title for confirmation -->
+    <string name="confirm_positive_title">Ok</string>
+
+    <!--AlertDialog negative button title for confirmation -->
+    <string name="confirm_negative_title">Cancel</string>
+
+    <!--AlertDialog message for back button and up navigation -->
+    <string name="back_button_dialog_msg">Changes haven\'t saved,\nAre you sure to go back!</string>
+
+    <!--Error message on database insertion failed -->
+    <string name="log_msg_insert_failed">Failed to insert a row for</string>
+
+    <!--Selected User's gender -->
+    <string name="user_gender_male">Male</string>
+    <string name="user_gender_female">Female</string>
+
+    <!-- Warning message when the user has credits less than 5 -->
+    <string name="warning_msg_less_credits">Don\'t have enough credits to transfer</string>
+
+    <!-- Spinner first item(label for the spinner) -->
+    <string name="spinner_label">Select User To Transfer Credits</string>
+
+    <!-- Warning message when no user is selected from the spinner list -->
+    <string name="warning_msg_empty_user_name">Please select a user</string>
+
+    <!-- Warning message when no user's credits is entered -->
+    <string name="warning_msg_empty_credits">Credits value cannot be empty</string>
+
+    <!-- Warning message when no user's credits value less than 5 or greater than selected user's credits -->
+    <string name="warning_msg_exceed_credits_limit">Please enter correct credits value\nvalue should be less than user\'s credits and greater than 1</string>
+
+    <!-- Successful message when user's data is inserted into the transfer table successfully-->
+    <string name="transfer_credit_successful_text">Transfer Credits successful</string>
+</resources>

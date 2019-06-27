@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Define all the string value for the username that display on spinner(used as Spinner's data adapter)-->
+
+    <string-array name="userName">
+        <item>Select User To Transfer Credits</item>
+        <item>James Butt</item>
+        <item>Lenna Paprocki</item>
+        <item>Josephine Darakjy</item>
+        <item>Daniel Foller</item>
+        <item>Simona Morasca</item>
+        <item>Willard Kolmetz</item>
+        <item>Minna Amigon</item>
+        <item>Cammy Albares</item>
+        <item>Dyan Oldroyd</item>
+        <item>Erick Ferencz</item>
+    </string-array>
+</resources>

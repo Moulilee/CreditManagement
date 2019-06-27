@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#808080</color>
+    <color name="colorPrimaryDark">#808080</color>
+    <color name="colorAccent">#808080</color>
+
+    <!--Button color for All User, Transfer Credit and Transfer button -->
+    <color name="buttonColor">#808080</color>
+</resources>

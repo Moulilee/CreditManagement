@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--define margin_top, margin_right, margin_left, margin_end, margin_start, margin_bottom for Button -->
+    <dimen name="user_button_margin">8dp</dimen>
+
+    <!--define margin_top, margin_right, margin_left, margin_end, margin_start, margin_bottom for TextView -->
+    <dimen name="text_view_margin">8dp</dimen>
+
+    <!--define margin_top, margin_right, margin_left, margin_end, margin_start, margin_bottom for TextView -->
+    <dimen name="spinner_margin">8dp</dimen>
+
+    <!--define margin_top, margin_right, margin_left, margin_end, margin_start, margin_bottom for RecyclerView -->
+    <dimen name="user_recycler_view_margin">8dp</dimen>
+
+    <!--User's profile ImageView's Width and Height -->
+    <dimen name="user_profile_image_view_width_and_height">52dp</dimen>
+
+    <!-- User's profile ImageView's all margin attribute value-->
+    <dimen name="profile_image_view_margin">8dp</dimen>
+
+    <!-- Transfer Credit Button's padding-->
+    <dimen name="transfer_credits_padding">4dp</dimen>
+</resources>
